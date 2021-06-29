@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@font-face {
+  src:url("/font/LG/LGSmHaL.ttf");
+  font-family:"hal";
+}
+@font-face {
+  src:url("/font/LG/LGSmHaR.ttf");
+  font-family:"har";
+}
+@font-face {
+  src:url("/font/LG/LGSmHaB.ttf");
+  font-family:"hab";
+}
+@font-face {
+  src:url("/font/LG/LGSmHaSB.ttf");
+  font-family:"hasb";
+}
+@font-face {
+  src:url("/font/Nanum/NanumSquareL.ttf");
+  font-family:"nanuml";
+}
+
+body, h2 {font-family:"hal"}
+h5 {font-family:"har"}
+li {font-family:"har"}
+p,span {font-family: "hal"}
+
+#scrollUp {background-color:#da0f47}
+
+/* 헤더부분 */
+.header-area {padding:10px 0}
+.header-area.sticky {margin-top:55px; background: rgba(20,20,20,0.8);}
+.header-area .header-wrapper {height:35px}
+.site-logo h2 img {vertical-align:top; height:35px}
+
+/* 네비게이션 */
+.main-menu li a {color:#fff}
+.main-menu li.active a {color:#da0f47}
+
+/* 영상 */
+#video > div {position:relative; height:0; padding-bottom: 56%;}
+#video iframe {position:absolute; left:0; top:0; z-index:5;}
+
+/* 컨텐츠1 */
+.content_1 {margin:100px 0}
+.content_1 .title {text-align:center}
+.content_1 .title span {font-size:18px; font-weight:400 }
+.content_1 .cont_1 {display:flex; flex-direction:column;}
+
+.content_1 .on_S {display:none}
+
+/* 컨텐츠2 */
+
+.vdo_btn_play {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); background-color: transparent; border:none}
+
+.content_1 .on_E,
+.content_1 .on_S  {position:relative; line-height:0}
+
+
+/* 슬라이드배너 */
+.slider-area .single-slider {position:relative;}
+.slider-area .single-slider .text_box {position:absolute; bottom:50PX; left:50%; transform: translateX(-50%);}
+
+.slider-area .single-slider .slide_img .slide_mo {display:none}
+
+.slider-area .single-slider .text_box h5 {color:#d0d0d0}
+.slider-area .single-slider .text_box h3 {color:#eaeaea}
+.slider-area .single-slider .text_box span {color:#efefef}
+
+/* owl 버튼 */
+.slider-area .owl-carousel .fa {font-size:2.1rem}
+.owl-carousel .owl-dots button.active {background-color:#da0f47}
+
+/* 아이콘 박스 */
+.icon-box-img-1 {background-image: url(/boot-mjs/assets/img/icon1.png);}
+.icon-box-img-2 {background-image: url(/boot-mjs/assets/img/icon2.png);}
+.icon-box-img-3 {background-image: url(/boot-mjs/assets/img/icon3.png);}
+
+.icon-box-content {background: rgba(20,20,20,0.8);}
+
+/* 믹스업 */
+
+/* 알파9 */
+.video-img-thumbnail {background-image: url(/boot-mjs/assets/img/Thumb.png);}
+.single-choose-item {margin-bottom:10px}
+/* 전문가 영역 */
+.expert_area {position:relative;}
+.expert_area .text_box2 {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) }
+.expert_area .text_box2 h2 {color:#efefef}
+.expert_area .text_box2 p {color:#b3b3b3}
+/* .expert_area .text_box2 .btn {background:#da0f47 none repeat scroll 0 0; border: 2px solid #da0f47;} */
+.expert_area .expert_mo {display:none}
+
+/* 리뷰 */
+.single-blog-img span {background:rgba(0,0,0,0.4); text-align:right}
+
+@media screen and (max-width: 767px){
+.content_1 .on_E { display: none;}
+.content_1 .on_S { display: block; }
+
+.slider-area .single-slider .slide_img .slide_pc {display:none}
+.slider-area .single-slider .slide_img .slide_mo {display:block}
+
+.expert_area .expert_pc {display:none}
+.expert_area .expert_mo {display:block}
+
+
+}
